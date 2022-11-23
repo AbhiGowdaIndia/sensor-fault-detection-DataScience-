@@ -1,5 +1,5 @@
 from setuptools import find_packages,setup
-
+from typing import List
 #Declaring variables for setup functions
 PROJECT_NAME="Sensor - Fault detection"
 VERSION="0.0.1"
