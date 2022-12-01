@@ -1,6 +1,6 @@
 import os
 from sensor.constant.s3_bucket import TRAINING_BUCKET_NAME
-
+from sensor.constant.database import COLLECTION_NAME
 SAVED_MODEL_DIR =os.path.join("saved_models")
 
 # defining common constant variable for training pipeline
@@ -21,7 +21,7 @@ SCHEMA_DROP_COLS = "drop_columns"
 """
 Data Ingestion related constant start with DATA_INGESTION VAR NAME
 """
-DATA_INGESTION_COLLECTION_NAME: str = "sensor"
+DATA_INGESTION_COLLECTION_NAME: str = COLLECTION_NAME
 DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 DATA_INGESTION_INGESTED_DIR: str = "ingested"
